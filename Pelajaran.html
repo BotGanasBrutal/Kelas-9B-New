@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Jadwal Pelajaran 9B</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#dff6f0,#eaf7e8);font-family:'Merriweather',serif;color:#123;}
+  .back{position:fixed;left:12px;top:12px;z-index:10}
+  .back button{padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:#fff;cursor:pointer}
+  .wrap{padding:20px;max-width:920px;margin:70px auto}
+  .card{background:white;border-radius:12px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+  h1{margin:0 0 8px}
+  table{width:100%;border-collapse:collapse;margin-top:12px}
+  th,td{padding:10px;border-bottom:1px solid rgba(0,0,0,0.06);text-align:left}
+  th{background:#f5fff8;color:#1b4}
+  footer{margin-top:12px;color:#356}
+  .owl{position:fixed;left:4vw;bottom:8vh;width:64px;height:64px;pointer-events:none;animation:bob 4s ease-in-out infinite}
+  @keyframes bob{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+  @media(max-width:520px){ .owl{display:none} }
+</style>
+</head>
+<body>
+  <div class="back"><button onclick="goHome()">← Kembali ke Beranda</button></div>
+
+  <div class="wrap">
+    <div class="card">
+      <h1>Jadwal Pelajaran Kelas 9B</h1>
+      <p style="margin:0 0 8px;color:#356">Jadwal mingguan — sesuaikan bila ada perubahan mendadak.</p>
+      <table>
+        <thead><tr><th>Hari</th><th>Pelajaran</th><th>Guru</th></tr></thead>
+        <tbody>
+          <tr><td>Senin</td><td>Matematika, IPA</td><td>Pak Rudi, Bu Lila</td></tr>
+          <tr><td>Selasa</td><td>B. Indonesia, IPS</td><td>Bu Sari, Pak Budi</td></tr>
+          <tr><td>Rabu</td><td>B. Inggris, PJOK</td><td>Bu Rina, Pak Agus</td></tr>
+          <tr><td>Kamis</td><td>PPKn, Seni Budaya</td><td>Bu Maya, Bu Winda</td></tr>
+          <tr><td>Jumat</td><td>Prakarya, Agama</td><td>Pak Toni, Pak Imam</td></tr>
+          <tr><td>Sabtu</td><td>Pengembangan Diri / Organisasi</td><td>Wali Kelas</td></tr>
+        </tbody>
+      </table>
+      <footer>Jadwal Pelajaran • Pastikan hadir tepat waktu</footer>
+    </div>
+  </div>
+
+  <div class="owl" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="100%" height="100%"><path d="M32 6c-8 0-14 6-14 14 0 0 0 6 6 8-4 2-6 6-6 10 0 6 6 12 14 12s14-6 14-12c0-4-2-8-6-10 6-2 6-8 6-8 0-8-6-14-14-14z" fill="#4a6b4a"/></svg>
+  </div>
+
+<script>
+  function goHome(){ window.location.href = 'index.html'; }
+</script>
+</body>
+</html>
