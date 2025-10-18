@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Struktur Kelas 9B</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,#dff6f0,#eaf7e8);font-family:'Merriweather',serif;color:#123;}
+  .back{position:fixed;left:12px;top:12px;z-index:10}
+  .back button{padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:#fff;cursor:pointer}
+  .wrap{padding:26px;max-width:920px;margin:70px auto}
+  .card{background:white;border-radius:12px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+  h1{margin:0 0 8px}
+  .map{display:flex;flex-direction:column;gap:10px;align-items:center}
+  .node{width:92%;max-width:560px;background:linear-gradient(180deg,#f8fff8,#eef7ee);padding:12px;border-radius:10px;border:1px solid rgba(0,0,0,0.04)}
+  .children{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+  .child{min-width:140px;text-align:center;padding:8px;border-radius:8px;background:#fbfff9}
+  footer{margin-top:12px;color:#356}
+</style>
+</head>
+<body>
+  <div class="back"><button onclick="goHome()">← Kembali ke Beranda</button></div>
+  <div class="wrap">
+    <div class="card">
+      <h1>Struktur Kelas 9B</h1>
+      <div class="map" role="img" aria-label="Struktur kelas">
+        <div class="node"><strong>Wali Kelas</strong><div>Ibu Samiatun</div></div>
+
+        <div class="node"><strong>Ketua Kelas</strong><div>Riska Nur Silvalay</div>
+          <div class="children"><div class="child"><strong>Wakil Ketua</strong><div>Vano Rafi</div></div></div></div>
+        </div>
+
+        <div class="node"><strong>Sekretariat</strong>
+          <div class="children">
+            <div class="child"><strong>Sekretaris</strong><div>Cinta Binta</div></div>
+            <div class="child"><strong>Wakil Sekretaris</strong><div>Permata Ayu</div></div>
+          </div>
+        </div>
+
+        <div class="node"><strong>Keuangan</strong>
+          <div class="children">
+            <div class="child"><strong>Bendahara</strong><div>Arin Olivia</div></div>
+            <div class="child"><strong>Wakil Bendahara</strong><div>Clarissa</div></div>
+          </div>
+        </div>
+      </div>
+      <foote>Struktur kelas 9B lho ikiii</foote></footer>
+    </div>
+  </div>
+
+<script>
+  function goHome(){ window.location.href = 'index.html'; }
+</script>
+</body>
+</html>
